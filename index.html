@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Covid-19 Rates USA Map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/c3.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <!-- include c3.js to make charts. c3.js is built upon d3.js -->
+    <script src="js/d3.js"></script>
+    <script src="js/c3.min.js"></script>
+</head>
+
+<body>
+    <div id="info">
+        <div id="title">
+            COVID-19 Cases U.S. County (2020)
+            <span><a href="https://github.com/kridang/" target="_blank"><i class="bi bi-github"></i></a></span>
+            <span id="reset"><a href="#">reset</a></span>
+        </div>
+        <div id="count" class="card">
+            <h5 id="desc"> # Covid-19 Case Deaths within the Displayed Map Area</h5>
+            <p id="covid-count"></p>
+        </div>
+        <div id="footer">
+            The pie chart shows the top counties in the USA with the highest COVID-19 case counts. <strong>Tip:</strong> Click on a county circle on the map (not a cluster) to see detailed cases and deaths in the popup.
+        </div>
+        <div id="piechart"></div>
+        <div id="instuct">
+          <p>
+            Zoom in to explore COVID-19 case rates and deaths at the county level.
+            The <strong># of deaths</strong> displayed above updates based on the visible map area.
+          </p>
+        </div>
+
+        <!-- <div id="covid-chart"></div> -->
+    </div>
+    <div id="map"></div>
+    <div id="legend"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arimo", sans-serif;
+  background-color: #1c1c1c;
+  color: #eee;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#info {
+  z-index: 1000;
+  position: absolute;
+  width: 450px;
+  top: 2%;
+  left: 1%;
+  padding: 30px 20px;
+  background: rgba(44, 47, 51, 0.9);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: 14px;
+}
+
+#info a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#info a:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+#title {
+  font-size: 26px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#title span {
+  font-size: 14px;
+  float: right;
+  margin-right: 10px;
+  color: #ccc;
+}
+
+#desc {
+  text-align: center;
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#covid-count {
+  margin: 0;
+  text-align: center;
+  color: #ff8c42;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#instruct {
+  font-size: 12pt;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #ddd;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+#footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+#legend {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  width: 130px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.break {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  opacity: 0.9;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.dot-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+/*
+.c3-chart-arcs-title {
+  fill: #fff;
+} */
+
+.c3-chart-arc text {
+  fill: #fff;
+  font-weight: 600;
+}
+
+.name, .value {
+  background-color: transparent;
+  color: #282424;
+}
+
+.mapboxgl-popup-content {
+  background: rgba(44, 47, 51, 0.95);
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
