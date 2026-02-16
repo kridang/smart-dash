@@ -1,6 +1,6 @@
 # USA Covid-19 Dashboard
 
-[Map Link](https://kridang.github.io/smart-dash)
+[Map Link](https://kridang.github.io/smart-dash/index.html)
 
 ## Description
 This smart dashboard visualizes the spatial distribution of COVID-19 cases across the United States using an interactive web map and dynamic data visualizations. The goal of this dashboard is to help users quickly explore geographic patterns, compare regions, and understand trends in case counts.
